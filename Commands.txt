@@ -1,0 +1,112 @@
+Microsoft Windows [Version 10.0.26100.6584]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\2400030596_InSemOne>code .
+
+D:\2400030596_InSemOne>git branch
+fatal: not a git repository (or any of the parent directories): .git
+
+D:\2400030596_InSemOne>echo "# 2400030596_InSemExam" >> README.md
+
+D:\2400030596_InSemOne>git init
+Initialized empty Git repository in D:/2400030596_InSemOne/.git/
+
+D:\2400030596_InSemOne>git add README.md
+
+D:\2400030596_InSemOne>git commit -m "first commit"
+[master (root-commit) f9b2220] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+D:\2400030596_InSemOne>git branch -M main
+
+D:\2400030596_InSemOne>git remote add origin https://github.com/KL2400030596/2400030596_InSemExam.git
+
+D:\2400030596_InSemOne>git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 242 bytes | 121.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/KL2400030596/2400030596_InSemExam.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+D:\2400030596_InSemOne>git branch
+* main
+
+D:\2400030596_InSemOne>git branch feature1
+
+D:\2400030596_InSemOne>git add App.js
+fatal: pathspec 'App.js' did not match any files
+
+D:\2400030596_InSemOne>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+D:\2400030596_InSemOne>git add App.js
+
+D:\2400030596_InSemOne>git commit -m "Successfully added App.js"
+[main fd74e75] Successfully added App.js
+ 1 file changed, 1 insertion(+)
+ create mode 100644 App.js
+
+D:\2400030596_InSemOne>git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 322 bytes | 161.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/KL2400030596/2400030596_InSemExam.git
+   f9b2220..fd74e75  main -> main
+branch 'main' set up to track 'origin/main'.
+
+D:\2400030596_InSemOne>git branch
+  feature1
+* main
+
+D:\2400030596_InSemOne>git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+
+D:\2400030596_InSemOne>git branch
+  feature1
+* main
+
+D:\2400030596_InSemOne>git branch feature2
+
+D:\2400030596_InSemOne>git add App.js
+
+D:\2400030596_InSemOne>git commit -m "Sucessfully added app.js"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+D:\2400030596_InSemOne>git push -u origin main
+branch 'main' set up to track 'origin/main'.
+Everything up-to-date
+
+D:\2400030596_InSemOne>git branch
+  feature1
+  feature2
+* main
+
+D:\2400030596_InSemOne>git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+
+D:\2400030596_InSemOne>git merge feature1
+Already up to date.
+
+D:\2400030596_InSemOne>git push -u origin main
+branch 'main' set up to track 'origin/main'.
+Everything up-to-date
+
+D:\2400030596_InSemOne>git merge feature2
+Already up to date.
+
+D:\2400030596_InSemOne>git push -u origin main
+branch 'main' set up to track 'origin/main'.
+Everything up-to-date
+
